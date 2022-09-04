@@ -1,0 +1,28 @@
+.admissionh{
+    text-align: center;
+    margin:2%;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: cornflowerblue;
+}
+
+.admissionTable .head{
+    font-weight: bold;
+    background-color: #628671;
+}
+
+.admissionTable table{
+    border: 5px solid rgb(124, 32, 32);
+    border-bottom: 3px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    /* font-family: 'Times New Roman', Times, serif; */
+    background-color: rgb(104, 100, 82);
+    color: white;
+}
+.admissionTable td{
+    padding: 30px;
+    border-bottom: 3px;
+    border: 5px solid rgb(124, 32, 32);
+     margin: 0 auto;
+}

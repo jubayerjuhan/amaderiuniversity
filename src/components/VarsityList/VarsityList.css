@@ -1,0 +1,67 @@
+
+.list table,th,td{
+    border: 2px solid black;
+    margin:0 auto;
+    
+}
+
+
+.publiclist  h1{
+    text-align: center;
+    padding: 10px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-weight: bold;
+}
+
+.publiclist p{
+    padding:10px;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-size: 20px;
+    color: black;
+}
+.list h2{
+    padding:10px;
+    color:blue;
+}
+
+.tableplist{
+    width:1400px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+
+.toptable th{
+    background-color: #0F1A50;
+    color:white;
+    height:50px;
+    font-size: 20px;
+}
+.toptable{
+    cursor: pointer;
+}
+
+.toptable th:hover{
+    color:orange;
+}
+
+.list td{
+    height:50px;
+
+}
+
+.tableplist tr:nth-child(odd){
+    background-color: rgba(80, 78, 78, 0.479);
+}
+
+.secondtable h2{
+    margin-top: 3%;
+}
+
+.lasttable{
+    margin-bottom: 2%;
+}
+
+.star{
+    color: red;
+}

@@ -1,0 +1,197 @@
+/*card*/
+
+.ims{
+    height:220px;
+    
+}
+.details{
+    z-index: 1;
+}
+.details .card-title{
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    transition-property: font-size;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.details .card-title:hover{
+    font-size: 30px;
+    color:chocolate;
+}
+
+.details .card{
+    background-color: #140230;
+    margin-top: 40px;
+    border:none;
+    border-radius: 20px 20px;  
+}
+.details .card-text{
+    color:white;
+}
+
+.cdf{
+    background-color: #2a1350;
+}
+
+.details .btn{
+    background-color: chocolate;
+    font-weight: bold;
+    border-radius: 2em;
+}
+
+.carda{
+    background-color:#2a1350 ;
+}
+
+.cdfa{
+    background-color:#140230 ;
+}
+
+/*varsity list*/
+
+.vsl{
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color:brown;
+}
+
+.divon{
+    width:600px;
+    margin-left: 30px;
+}
+
+.details .listh{
+    color:rgb(22, 107, 107);
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: bold;
+}
+
+.logoim{
+    height: 90px;
+    width:100px;
+}
+
+.details .logop{
+    font-size: 20px;
+    font-weight: bold;
+    /* font-family: 'Times New Roman', Times, serif; */
+    padding-top: 20px 30px;
+}
+
+.details .btn-primary{
+    margin:auto;
+}
+
+.details .divont{
+    margin-left: 500px;
+}
+
+.details .divonth{
+    margin-left: 1000px;
+}
+
+/*Varsity Ranking*/
+
+.details .vsr{
+    width:800px;
+    margin-left: 400px;
+    text-align: center;
+}
+
+.details .rh{
+    margin-top: 60px;
+   padding-left: 120px;
+}
+
+
+.details .rp{
+    overflow: scroll;
+    border: 5px solid rgb(22, 22, 110);
+    width: 550px;
+    margin-top: 30px;
+    scrollbar-width: thin;
+    max-height: 270px;
+    text-align: justify;
+    direction: ltr;
+    scrollbar-color: #d4aa70 #e4e4e4;
+}
+.details .section::-webkit-scrollbar {
+    width: 20px;
+    
+  }
+  .section::-webkit-scrollbar {
+    width: 14px;
+    
+  }
+  
+  .section::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
+  
+ .details .section::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-image: linear-gradient(180deg, #3f0c83 0%, #708ad4 99%);
+    box-shadow: inset 2px 2px 3px 0 rgba(#fff, 0.5);
+  }
+
+  .listh:hover{
+      font-size: 45px;
+      transition: 0.8s;
+  }
+
+  .mb{
+      margin-top: 50px;
+  }
+
+  /*Admission Time & Date*/
+
+.adcolor1{
+    background-color: rgb(190, 100, 84);
+}
+
+.adcolor2{
+    background-color: rosybrown ;
+}
+
+.adcolor3{
+    background-color: salmon;
+}
+
+.details .btn-color{
+    background-image: linear-gradient(45deg,orange,blue);
+    color: rgb(245, 244, 244);
+}
+
+.cardad{
+    font-size: 25px;
+    color: rgb(247, 247, 247);
+}
+
+/*Question Bank*/
+
+.qd{
+    width:40%;
+    margin:5%;
+    float: left;
+}
+
+.qdv{
+    height:600px;
+    width:100%;
+}
+
+.qbtn{
+    background-color: rgba(134, 70, 10, 0.637);
+    color: snow;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-size: 18px;
+}

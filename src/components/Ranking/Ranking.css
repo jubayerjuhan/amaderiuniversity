@@ -1,0 +1,33 @@
+.rankingheader{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rankingheader p{
+    margin-left: 1000px;
+    background-color: chocolate;
+    width: 250px;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+.ranking{
+    margin-top: 3%;
+    width: 1400px;
+    margin-left: 3%;
+    text-align: center;
+    padding: 15px;
+    font-size: 23px;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    margin-bottom: 50px;
+}
+
+.rankingimage{
+    margin-left: 270px;
+    
+}
+
+.rankingimage img{
+    width: 980px;
+}

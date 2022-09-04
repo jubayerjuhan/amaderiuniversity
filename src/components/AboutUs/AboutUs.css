@@ -1,0 +1,86 @@
+/*amader pic*/
+
+/* .row{
+    width: 100%;
+} */
+.about .card-img-top{
+ border-radius: 50%;
+ width:292px;
+ height: 313px;
+ margin: 10px auto;
+}
+.btn:hover{
+    color:brown;
+    background-color: rgb(255, 220, 226);
+    /* font-size: 20px; */
+    font-weight: bolder;
+}
+.card{
+    float: left;
+    width: 100%;
+}
+
+.card-text{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-size: 20px;
+}
+
+.abth{
+    padding:10px;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-size: 50px;
+}
+.abtdh{
+    height:80px;
+    width:250px;
+    margin:20px 650px;
+}
+
+.card{
+    border-left: 6px solid;
+    border-image: linear-gradient( rgb(44, 98, 119), white);
+    border-image-slice: 1;
+    box-shadow: 10px 10px 10px rgb(119, 117, 117);
+   
+}
+
+.col{
+    width: 490px;
+    margin-left: 10px;
+}
+
+/*question*/
+
+.qdv{
+    width:100%
+}
+
+.qdv p,h2{
+    margin:10px;
+    padding:10px;
+}
+
+.qdv p{
+    font-size: 22px;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+/*lastheader*/
+
+
+.last{
+    background-color: rgb(37, 65, 9);
+    
+}
+
+.last img{
+    width:2.8%;
+   margin-left: 980px; 
+   margin-top: -45px;
+}
+.lasth{
+    text-align: center;
+    height:30px;
+    padding:10px;
+    color: cornsilk;
+}

@@ -1,0 +1,36 @@
+
+.abth{
+    padding:10px;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-size: 35px;
+}
+
+.abtdh{
+    height:80px;
+    width:250px;
+    margin:20px 650px;
+}
+
+.halfwidth{
+    width: 45%;
+   float: left;
+   margin-left: 2%;
+    
+}
+.halfwidth img{
+    width: 100%;
+}
+.privacy .halfwidth p{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-size: 19px;
+}
+
+.privacyconfess{
+    margin-left: 2%;
+    margin-top: 4%;
+}
+
+.privacyconfess p{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-size: 18px;
+}
