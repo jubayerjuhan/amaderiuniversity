@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link, useHistory, useLocation } from "react-router-dom";
-import logo from "../../../fakeData/images/Logo/projectlogohead.png";
+import logo from "../../../assets/image-removebg-preview (2).png";
 import "./Login.css";
 import { Button, Form } from "react-bootstrap";
 import {
@@ -8,6 +8,7 @@ import {
   signInWithEmailAndPassword,
 } from "../firebase/loginManager";
 import { UserContext } from "../../../App";
+import { useDispatch } from "react-redux";
 
 const Login = () => {
   // const [newUser, setNewUser] = useState(false);
@@ -22,7 +23,8 @@ const Login = () => {
   const [btn, setBtn] = useState(true);
 
   initializeLoginFramework();
-  const [, setLoggedInUser] = useContext(UserContext);
+  const dispatch = useDispatch();
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const history = useHistory();
   const location = useLocation();
   let { from } = location.state || { from: { pathname: "/" } };
@@ -85,6 +87,14 @@ const Login = () => {
     if (user.email && user.password) {
       signInWithEmailAndPassword(user.email, user.password).then((res) => {
         if (res.success) {
+          dispatch({
+            type: "LOGIN",
+            payload: {
+              name: res.displayName,
+              id: res.uid,
+              email: res.email,
+            },
+          });
           handleResponse(res, true);
         }
         setMsg(res.error);

@@ -1,17 +1,13 @@
 import React, { createContext, useState } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
 import AddItem from "./components/Admin/AddItem/AddItem";
 import AddQuestion from "./components/Admin/AddQuestion/AddQuestion";
 import AddTeacher from "./components/Admin/AddTeacher/AddTeacher";
 // import AllItem from "./components/Admin/AllItem/AllItem";
 import DeliveryOrder from "./components/Admin/DeliveryOrder/DeliveryOrder";
 import PendingOrder from "./components/Admin/PendingOrder/PendingOrder";
-import Checkout from "./components/Checkout/Checkout/Checkout";
+import CheckoutMaterial from "./pages/Chekout/CheckoutMaterial.js";
 import Exam from "./components/Home/Exam/Exam";
 import Home from "./components/Home/Home/Home";
 import SkillTest from "./components/Home/SkillTest/SkillTest";
@@ -19,6 +15,7 @@ import Item from "./components/Item/Item/Item";
 import Login from "./components/Login/Login/Login";
 import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 import SignUp from "./components/Login/SignUp/SignUp";
+import MockTest from "./pages/MockTest/Mocktest.jsx";
 import Shipment from "./components/Shipment/Shipment/Shipment";
 import Appointment from "./components/Home/Appointment/Appointment";
 import Opinion from "./components/User/Opinion/Opinion";
@@ -52,8 +49,13 @@ import AddUniversity from "./components/Admin/AddUniversity/AddUniversity";
 import UniversityList from "./components/Admin/UniversityList/UniversityList";
 import ItemProfile from "./components/Admin/ItemProfile/ItemProfile";
 import UniversityProfile from "./components/Admin/UniversityProfile/UniversityProfile";
+import Books from "./pages/Books/Books.jsx";
+import TestResults from "./pages/Exams/TestResults.jsx";
+import Adminpanel from "./pages/AdminPanel/Adminpanel.js";
+import AllOrders from "./pages/AllOrders/AllOrders.js";
 
 export const UserContext = createContext();
+export const backendLink = "http://localhost:4200";
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -61,9 +63,26 @@ function App() {
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>
-
           <Route path="/home">
             <Home></Home>
+          </Route>
+          <Route path="/admin">
+            <Adminpanel />
+          </Route>
+          <Route path="/orders">
+            <AllOrders />
+          </Route>
+          <Route path="/checkout/:id">
+            <CheckoutMaterial />
+          </Route>
+          <Route path="/test-result">
+            <TestResults />
+          </Route>
+          <Route path="/books">
+            <Books />
+          </Route>
+          <Route path="/mock-test">
+            <MockTest />
           </Route>
           <Route path="/login">
             <Login></Login>
@@ -72,14 +91,14 @@ function App() {
             <SignUp></SignUp>
           </Route>
           <PrivateRoute path="/skillTest">
-           <SkillTest/>
+            <SkillTest />
           </PrivateRoute>
           <PrivateRoute path="/exam">
-           <Exam/>
+            <Exam />
           </PrivateRoute>
-          <PrivateRoute path="/checkout">
+          {/* <PrivateRoute path="/checkout">
             <Checkout></Checkout>
-          </PrivateRoute>
+          </PrivateRoute> */}
           <Route path="/item/:id">
             <Item></Item>
           </Route>
@@ -104,53 +123,53 @@ function App() {
           <Route path="/admin/approvedAppointment">
             <ApprovedAppointment />
           </Route>
-          
+
           <Route path="/admin/addItem">
-            <AddItem/>
+            <AddItem />
           </Route>
           <Route path="/admin/itemList">
-            <ItemList/>
+            <ItemList />
           </Route>
           <Route path="/admin/item/:id">
             <ItemProfile />
           </Route>
           <Route path="/admin/addUniversity">
-            <AddUniversity/>
+            <AddUniversity />
           </Route>
           <Route path="/admin/university/:id">
             <UniversityProfile />
           </Route>
           <Route path="/admin/addQuestion">
-            <AddQuestion/>
+            <AddQuestion />
           </Route>
           <Route path="/admin/questionList">
-            <QuestionList/>
+            <QuestionList />
           </Route>
           <Route path="/admin/question/:id">
             <QuestionProfile />
           </Route>
           <Route path="/admin/teacherList">
-            <TeacherList/>
+            <TeacherList />
           </Route>
           <Route path="/admin/universityList">
-            <UniversityList/>
+            <UniversityList />
           </Route>
           <Route path="/admin/addTeacher">
-            <AddTeacher/>
+            <AddTeacher />
           </Route>
           <Route path="/admin/teacher/:id">
             <AdminTeacherProfile />
           </Route>
           <Route path="/user/opinion">
-            <Opinion/>
+            <Opinion />
           </Route>
           <Route path="/user/appointmentStatus">
-            <AppointmentStatus/>
+            <AppointmentStatus />
           </Route>
           <Route path="/user/orderList">
-            <OrderList/>
+            <OrderList />
           </Route>
-          
+
           <Route path="/publicRanking">
             <PublicRanking />
           </Route>
@@ -205,7 +224,6 @@ function App() {
         </Switch>
       </Router>
     </UserContext.Provider>
-
   );
 }
 

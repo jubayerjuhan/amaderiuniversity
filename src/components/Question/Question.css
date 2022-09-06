@@ -1,0 +1,33 @@
+.qs-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.qs-body {
+  margin-bottom: 30px;
+}
+
+.qs-options {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 10px 20px;
+}
+
+.qs-opt {
+  cursor: pointer;
+  border: 1px solid gray;
+  padding: 5px 5px;
+}
+.qs-opt > p,
+.qs-opt-selected > p {
+  margin: 0px;
+}
+
+.qs-opt-selected {
+  cursor: pointer;
+  margin: 0px;
+  border: 1px solid gray;
+  padding: 5px 5px;
+  background-color: green;
+  color: beige;
+}

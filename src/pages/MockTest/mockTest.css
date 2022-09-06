@@ -1,0 +1,33 @@
+.countDown {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.startWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 0 20vw;
+}
+
+.selectWrapper > select {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.qsWrapper {
+  max-width: 50%;
+}

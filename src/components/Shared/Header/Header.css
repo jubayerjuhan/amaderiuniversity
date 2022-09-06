@@ -1,86 +1,99 @@
-.cart{
-    color: black;
-    margin-right: 20px;
-    text-decoration: none!important;
+.cart {
+  color: black;
+  margin-right: 20px;
+  text-decoration: none !important;
 }
-.cart :hover{
-    color:yellow;
-    font-size: 30px;
-    
+
+.logo {
+  height: 80px;
+  width: 80px;
 }
-.login:hover{
-    background-color: blue;
-    color: white!important;
-    border-radius: 30px;
+.cart :hover {
+  color: yellow;
+}
+.login:hover {
+  background-color: blue;
+  color: white !important;
+  border-radius: 30px;
 }
 
 .numberCircle {
-    position: relative;
-    top: -12px;
-    left: 38px;
-    border-radius: 200px;
-    width: 20px;
-    height: 20px;
-    padding: 1px;
-    background: blue;
-    border: 2px solid blue;
-    color: white;
-    text-align: center;
-    /* text-decoration: none; */
-    font: 12px Arial, sans-serif;
+  position: relative;
+  top: -12px;
+  left: 38px;
+  border-radius: 200px;
+  width: 20px;
+  height: 20px;
+  padding: 1px;
+  background: blue;
+  border: 2px solid blue;
+  color: white;
+  text-align: center;
+  /* text-decoration: none; */
+  font: 12px Arial, sans-serif;
 }
-.numberCircle:hover{
-    background-color: blue;
-    color: white!important;
-    border-radius: 30px;
+.numberCircle:hover {
+  background-color: blue;
+  color: white !important;
+  border-radius: 30px;
 }
-.bc{
-    background-color: #0F1A50;  
-}
-
-.tc{
-    color:white;
-    padding:15px 20px;
-    font-size: 16px;
+.bc {
+  background-color: #554994;
 }
 
-.hv:hover{
-    color:yellow;
-    font-size: 18px;
+.navbar > a {
+  text-decoration: none !important;
+}
+.tc {
+  color: white;
+  padding: 15px 20px;
+  font-size: 13px;
 }
 
-.navbar{
-    padding:5px;
-    height:100px;
+.hv:hover {
+  color: yellow;
 }
 
-.container-fluid{
-    height: 100px;
+.navbar {
+  padding: 5px;
+  height: 100px;
 }
 
-.lp{
-    margin-top: 40px;
-    width: 360px;
-   
+.nav-link {
+  padding: 10px !important;
+  color: white !important;
+}
+.headerWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.ip{
-    width:35px;
+.navbarItems {
+  padding-left: 40px;
+}
+.lp {
+  margin-top: 40px;
+  width: 360px;
 }
 
-.hvv:hover{
-    background-color: black;
-    color:blanchedalmond
+.ip {
+  width: 35px;
 }
 
-.drop-link{
-    color:white;
-/* position: relative; */
-/* bottom:4px; */
-    font-size: 16px;
+.hvv:hover {
+  background-color: black;
+  color: blanchedalmond;
 }
-.drop-link:hover{
-    color:yellow;
-    font-size: 18px;
-    text-decoration: none;
+
+.drop-link {
+  color: white;
+  padding: 0px;
+  /* position: relative; */
+  /* bottom:4px; */
+  font-size: 13px;
+}
+.drop-link:hover {
+  color: yellow;
+  text-decoration: none;
 }
