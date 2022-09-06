@@ -1,6 +1,13 @@
 import firebase from "firebase/app";
 import "firebase/auth";
-import firebaseConfig from "./firebase.config.js";
+export const firebaseConfig = {
+  apiKey: "AIzaSyDQPC8zGXvGD1gTYtVoSJcEcuNDqlAV2N0",
+  authDomain: "red-onion-bd71.firebaseapp.com",
+  projectId: "red-onion-bd71",
+  storageBucket: "red-onion-bd71.appspot.com",
+  messagingSenderId: "5138782910",
+  appId: "1:5138782910:web:44884434d1623b3ad69cef",
+};
 
 export const initializeLoginFramework = () => {
   if (firebase.apps.length === 0) {
