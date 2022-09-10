@@ -55,7 +55,7 @@ import Adminpanel from "./pages/AdminPanel/Adminpanel.js";
 import AllOrders from "./pages/AllOrders/AllOrders.js";
 
 export const UserContext = createContext();
-export const backendLink = "http://localhost:4200";
+export const backendLink = process.env.backLink || "http://localhost:4200";
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
