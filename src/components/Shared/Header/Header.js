@@ -240,6 +240,15 @@ const Header = ({ cart }) => {
                       </li>
                       <li className="nav-item">
                         <a
+                          href="/model-test"
+                          className="nav-link active tc hv"
+                          role="button"
+                        >
+                          Model Test
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a
                           href="/test-result"
                           className="nav-link active tc hv"
                           role="button"

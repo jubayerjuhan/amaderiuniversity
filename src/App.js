@@ -53,6 +53,7 @@ import Books from "./pages/Books/Books.jsx";
 import TestResults from "./pages/Exams/TestResults.jsx";
 import Adminpanel from "./pages/AdminPanel/Adminpanel.js";
 import AllOrders from "./pages/AllOrders/AllOrders.js";
+import ModelTest from "./pages/ModelTest/ModelTest.js";
 
 export const UserContext = createContext();
 export const backendLink = process.env.backLink || "http://localhost:4200";
@@ -101,6 +102,9 @@ function App() {
           </PrivateRoute> */}
           <Route path="/item/:id">
             <Item></Item>
+          </Route>
+          <Route path="/model-test">
+            <ModelTest />
           </Route>
           <Route path="/shipment">
             <Shipment></Shipment>

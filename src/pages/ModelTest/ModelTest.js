@@ -10,7 +10,7 @@ import Header from "../../components/Shared/Header/Header.js";
 import Countdown from "react-countdown";
 import "./mockTest.css";
 import { useSelector } from "react-redux";
-const Mocktest = () => {
+const ModelTest = () => {
   const [testQuestion, setTestQuestion] = useState([]);
   const [givenAnswer, setGivenAnswer] = useState([]);
 
@@ -21,7 +21,7 @@ const Mocktest = () => {
   }, []);
 
   const getQuestions = async () => {
-    const questions = await client.get("/questions");
+    const questions = await client.get("/questionsModel");
     console.log(questions.data);
     setTestQuestion(questions.data);
   };
@@ -87,9 +87,8 @@ const Mocktest = () => {
       mark: ans.length,
       section: group,
     });
-
-    console.log(res, "response");
   };
+  console.log(group, testQuestion, "response");
 
   return (
     <div>
@@ -99,10 +98,13 @@ const Mocktest = () => {
           <div className="selectWrapper">
             <p>Enter Your Group</p>
             <select name="" id="" onChange={(e) => setGroup(e.target.value)}>
-              <option value="No Group">Select A Group</option>
-              <option value="science">Science</option>
-              <option value="arts">Arts</option>
-              <option value="commerces">Commerce</option>
+              <option value={null}>Select One</option>
+              <option value="Du_a">DU A</option>
+              <option value="Du_b">DU B</option>
+              <option value="Du_c">DU C</option>
+              <option value="Du_d">DU D</option>
+              <option value="jnu_a">JNU</option>
+              <option value="buet">Buet</option>
             </select>
           </div>
           <Button
@@ -127,15 +129,18 @@ const Mocktest = () => {
                 </p>
               )}{" "}
             </div>
-            {testQuestion?.map((qs, key) => (
-              <Question
-                givenAnswer={givenAnswer}
-                submitted={disable}
-                handleAnsClick={handleAnsClick}
-                question={qs}
-                key={key}
-              />
-            ))}
+            {testQuestion?.map((qs, key) => {
+              if (!qs.data.unit === group) return <></>;
+              return (
+                <Question
+                  givenAnswer={givenAnswer}
+                  submitted={disable}
+                  handleAnsClick={handleAnsClick}
+                  question={qs}
+                  key={key}
+                />
+              );
+            })}
             <div className="buttons">
               <Button disabled={disable} onClick={submitAllAns} className="">
                 Submit Answer
@@ -148,4 +153,4 @@ const Mocktest = () => {
   );
 };
 
-export default Mocktest;
+export default ModelTest;

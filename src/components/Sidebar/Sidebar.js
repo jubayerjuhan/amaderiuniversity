@@ -8,6 +8,7 @@ const Sidebar = ({ component, setClickedComponent }) => {
     "Orders",
     "Questions",
     "Add_Questions",
+    "AddModelTestQs",
   ];
   return (
     <div>

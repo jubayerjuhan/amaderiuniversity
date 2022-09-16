@@ -7,9 +7,7 @@ const bookscard = ({ book }) => {
     <Card style={{ width: "100%" }}>
       <Card.Img
         variant="top"
-        src={`${"https://admission-helpline.herokuapp.com/"}/images/${
-          book.image
-        }`}
+        src={`${"http://localhost:4200"}/images/${book.image}`}
         style={{ width: "100%", height: "250px", objectFit: "cover" }}
       />
       <Card.Body>

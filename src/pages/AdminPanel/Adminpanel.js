@@ -13,8 +13,12 @@ const Adminpanel = () => {
     orders: <Orders />,
     add_questions: <AddQuestion />,
     add_books: <AddBooks />,
+    addmodeltestqs: <AddQuestionModel />,
   };
   const [activeComponent, setActiveComponent] = useState("Books");
+
+  console.log(components[activeComponent.toLowerCase()]);
+
   console.log(activeComponent, "active");
 
   return (
@@ -298,6 +302,119 @@ const AddQuestion = () => {
                       <option value="science">Science</option>
                       <option value="arts">Arts</option>
                       <option value="commerce">Commerce</option>
+                    </select>
+                  </>
+                );
+              else
+                return (
+                  <>
+                    <Form.Label>{field}</Form.Label>
+                    <Form.Control
+                      placeholder={field}
+                      value={fieldValues[field.toLowerCase()]}
+                      onChange={(e) =>
+                        setFieldValues({
+                          ...fieldValues,
+                          [field.toLowerCase()]: e.target.value,
+                        })
+                      }
+                      name={field.toLowerCase()}
+                      className="mb-4"
+                    />
+                  </>
+                );
+            })}
+            {options.map((opt, key) => {
+              return (
+                <>
+                  <Form.Label>{opt}</Form.Label>
+                  <Form.Control
+                    placeholder={opt}
+                    // value={fieldValues[field.toLowerCase()]}
+                    onChange={(e) =>
+                      setFieldValues({
+                        ...fieldValues,
+                        [opt]: e.target.value,
+                      })
+                    }
+                    name={opt}
+                    className="mb-4"
+                  />
+                </>
+              );
+            })}
+            <Button onClick={handleSubmit} style={{ width: "100%" }}>
+              Submit
+            </Button>
+          </Form.Group>
+        </div>
+      </div>
+    </>
+  );
+};
+const AddQuestionModel = () => {
+  const fields = ["Question", "CorrectAns", "Unit"];
+  const [fieldValues, setFieldValues] = useState({});
+  const options = ["A", "B", "C", "D"];
+
+  // handle submit
+  const handleSubmit = async () => {
+    const questionReq = {
+      options: [],
+    };
+    questionReq.question = fieldValues.question;
+    questionReq.correctAns = fieldValues.correctans;
+    questionReq.unit = fieldValues.unit;
+    options.forEach((opt) => {
+      questionReq.options.push({
+        name: fieldValues[opt],
+        serial: opt,
+      });
+    });
+    console.log(questionReq, "qr");
+
+    const res = await client.post("/addquestionModel", questionReq);
+    if (res.status === 201) {
+      window.alert("Question Added Successfully");
+      setFieldValues({});
+    }
+  };
+
+  console.log(fieldValues);
+
+  return (
+    <>
+      <div>
+        <p className="mb-3">Add Books</p>
+        <div>
+          <Form.Group className="mb-3" onSubmit={() => console.log("first")}>
+            {fields.map((field, key) => {
+              if (field === "Unit")
+                return (
+                  <>
+                    <p>Select Qs Set Name</p>
+                    <select
+                      style={{
+                        width: "100%",
+                        height: "50px",
+                        marginBottom: "20px",
+                      }}
+                      name=""
+                      id=""
+                      onChange={(e) =>
+                        setFieldValues({
+                          ...fieldValues,
+                          unit: e.target.value,
+                        })
+                      }
+                    >
+                      <option value={null}>Select One</option>
+                      <option value="Du_a">DU A</option>
+                      <option value="Du_b">DU B</option>
+                      <option value="Du_c">DU C</option>
+                      <option value="Du_d">DU D</option>
+                      <option value="jnu_a">JNU</option>
+                      <option value="buet">Buet</option>
                     </select>
                   </>
                 );
