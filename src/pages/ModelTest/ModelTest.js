@@ -111,7 +111,7 @@ const ModelTest = () => {
             className="mt-10 startButton"
             onClick={() => {
               setMockTest(true);
-              setEndDate(Date.now() + 20 * 60 * 1000);
+              setEndDate(Date.now() + 60 * 60 * 1000);
             }}
           >
             Start Mock Test
@@ -131,6 +131,10 @@ const ModelTest = () => {
             </div>
             {testQuestion?.map((qs, key) => {
               if (!qs.data.unit === group) return <></>;
+              if (key === 0) return <h1 className="subjectTitle">Bangla</h1>;
+              if (key === 19) return <h1 className="subjectTitle">English</h1>;
+              if (key === 39)
+                return <h1 className="subjectTitle">General Knowledge</h1>;
               return (
                 <Question
                   givenAnswer={givenAnswer}

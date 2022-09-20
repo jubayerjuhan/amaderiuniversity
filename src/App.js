@@ -173,8 +173,7 @@ function App() {
           <Route path="/user/orderList">
             <OrderList />
           </Route>
-
-          <Route path="/publicRanking">
+          <Route path="/uni-ranking">
             <PublicRanking />
           </Route>
           <Route path="/privateRanking">

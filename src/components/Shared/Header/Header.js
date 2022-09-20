@@ -119,29 +119,6 @@ const Header = ({ cart }) => {
                 style={{ position: "relative", top: "8px" }}
                 className="nav-item dropdown"
               >
-                <Navbar.Collapse id="navbar-dark-example">
-                  <Nav>
-                    <NavDropdown
-                      id="nav-dropdown-dark-example"
-                      title={
-                        <a href="." className="drop-link">
-                          University Ranking
-                        </a>
-                      }
-                      menuVariant="white"
-                    >
-                      <NavDropdown.Item href="/publicRanking">
-                        Public University
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="/privateRanking">
-                        Private University
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="/nationalRanking">
-                        National University
-                      </NavDropdown.Item>
-                    </NavDropdown>
-                  </Nav>
-                </Navbar.Collapse>
                 {/* <a className="nav-link dropdown-toggle tc hv"   id="dropdown-basic" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   University Ranking
                 </a>
@@ -157,7 +134,7 @@ const Header = ({ cart }) => {
               >
                 <Navbar.Collapse id="navbar-dark-example">
                   <Nav>
-                    <NavDropdown
+                    {/* <NavDropdown
                       id="nav-dropdown-dark-example"
                       title={
                         <a href="." className="drop-link">
@@ -175,10 +152,19 @@ const Header = ({ cart }) => {
                       <NavDropdown.Item href="/nationalAdmission">
                         National University
                       </NavDropdown.Item>
-                    </NavDropdown>
+                    </NavDropdown> */}
                   </Nav>
                 </Navbar.Collapse>
                 {/* <a className="nav-link active tc hv" role="button">Admission Time &amp; Date</a> */}
+              </li>
+              <li className="nav-item">
+                <a
+                  href="/uni-ranking"
+                  className="nav-link active tc hv "
+                  role="button"
+                >
+                  University Rankings
+                </a>
               </li>
               <li className="nav-item">
                 <a
