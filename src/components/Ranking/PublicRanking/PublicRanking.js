@@ -83,8 +83,21 @@ const PublicRanking = () => {
       <div
         style={{
           maxWidth: "100vw",
+          fontSize: "14px",
         }}
       >
+        <div
+          style={{
+            padding: "10px 30px",
+          }}
+        >
+          <p>
+            Source:{" "}
+            <a href="https://www.webometrics.info/en/asia/bangladesh%20">
+              Webometrics University Ranking
+            </a>
+          </p>
+        </div>
         <table
           className="ranking"
           style={{
@@ -96,7 +109,6 @@ const PublicRanking = () => {
               <th scope="col">Rank</th>
               <th scope="col">World Rank</th>
               <th scope="col">University Name</th>
-              <th scope="col">DEC</th>
               <th scope="col">Impact Rank</th>
               <th scope="col">Openness Rank</th>
               <th scope="col">Excellence Rank*</th>
@@ -123,11 +135,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/du.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>3967</center>
               </td>
               <td>
@@ -147,11 +154,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://www.sust.edu/" target="_blank">
                   Shahjalal University of Science &amp; Technology
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/sust.edu">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -177,11 +179,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/buet.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>2967</center>
               </td>
               <td>
@@ -201,11 +198,6 @@ const PublicRanking = () => {
               <td>
                 <a href="http://www.ru.ac.bd/" target="_blank">
                   Rajshahi University
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/ru.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -231,11 +223,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/northsouth.edu">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>2397</center>
               </td>
               <td>
@@ -255,11 +242,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://juniv.edu/" target="_blank">
                   Jahangirnagar University
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/juniv.edu">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -285,11 +267,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/bracu.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>4074</center>
               </td>
               <td>
@@ -309,11 +286,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://www.bau.edu.bd/" target="_blank">
                   Bangladesh Agricultural University
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/bau.edu.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -339,11 +311,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/cu.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>6690</center>
               </td>
               <td>
@@ -363,11 +330,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://www.daffodilvarsity.edu.bd/" target="_blank">
                   Daffodil International University
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/daffodilvarsity.edu.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -393,11 +355,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/nstu.edu.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>4588</center>
               </td>
               <td>
@@ -417,11 +374,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://ku.ac.bd/" target="_blank">
                   Khulna University
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/ku.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -447,11 +399,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/kuet.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>7478</center>
               </td>
               <td>
@@ -471,11 +418,6 @@ const PublicRanking = () => {
               <td>
                 <a href="http://www.iub.edu.bd/" target="_blank">
                   Independent University Bangladesh
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/iub.edu.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -501,11 +443,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/ruet.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>10733</center>
               </td>
               <td>
@@ -525,11 +462,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://www.cuet.ac.bd/" target="_blank">
                   Chittagong University of Engineering and Technology
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/cuet.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -555,11 +487,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/ewubd.edu">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>7734</center>
               </td>
               <td>
@@ -579,11 +506,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://www.jnu.ac.bd/" target="_blank">
                   Jagannath University
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/jnu.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -609,11 +531,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/mbstu.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>12337</center>
               </td>
               <td>
@@ -633,11 +550,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://just.edu.bd/" target="_blank">
                   Jessore University of Science &amp; Technology
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/just.edu.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -663,11 +575,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/aust.edu">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>9305</center>
               </td>
               <td>
@@ -687,11 +594,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://www.aiub.edu/" target="_blank">
                   American International University Bangladesh
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/aiub.edu">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -717,11 +619,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/iiuc.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>11321</center>
               </td>
               <td>
@@ -741,11 +638,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://bsmrau.edu.bd/" target="_blank">
                   Bangabandhu Sheikh Mujibur Rahman Agricultural University
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/bsmrau.edu.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -771,11 +663,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/duet.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>10471</center>
               </td>
               <td>
@@ -795,11 +682,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://pstu.ac.bd/" target="_blank">
                   Patuakhali Science &amp; Technology University
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/pstu.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -825,11 +707,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/uap-bd.edu">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>9457</center>
               </td>
               <td>
@@ -852,11 +729,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/sau.edu.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>12703</center>
               </td>
               <td>
@@ -876,11 +748,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://bsmmu.edu.bd/" target="_blank">
                   Bangabandhu Sheikh Mujib Medical University
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/bsmmu.edu.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -907,11 +774,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/hstu.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>11273</center>
               </td>
               <td>
@@ -931,11 +793,6 @@ const PublicRanking = () => {
               <td>
                 <a href="http://www.seu.edu.bd/" target="_blank">
                   Southeast University
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/seu.edu.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -962,11 +819,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/sau.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>13560</center>
               </td>
               <td>
@@ -986,11 +838,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://mist.ac.bd/" target="_blank">
                   Military Institute of Science &amp; Technology
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/mist.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -1016,11 +863,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/uiu.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>9174</center>
               </td>
               <td>
@@ -1043,11 +885,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/brur.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>11506</center>
               </td>
               <td>
@@ -1067,11 +904,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://www.iu.ac.bd/" target="_blank">
                   Islamic University Kushtia
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/iu.ac.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -1098,11 +930,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/iubat.edu">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>10710</center>
               </td>
               <td>
@@ -1122,11 +949,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://ulab.edu.bd/" target="_blank">
                   University of Liberal Arts Bangladesh
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/ulab.edu.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
@@ -1152,11 +974,6 @@ const PublicRanking = () => {
                 </a>
               </td>
               <td>
-                <a href="/en/detalles/green.edu.bd">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
-                </a>
-              </td>
-              <td>
                 <center>12324</center>
               </td>
               <td>
@@ -1176,11 +993,6 @@ const PublicRanking = () => {
               <td>
                 <a href="https://www.iutoic-dhaka.edu/" target="_blank">
                   Islamic University of Technology
-                </a>
-              </td>
-              <td>
-                <a href="/en/detalles/iutoic-dhaka.edu">
-                  <img src="https://www.webometrics.info/sites/default/files/Details.jpg" />
                 </a>
               </td>
               <td>
